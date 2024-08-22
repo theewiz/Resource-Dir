@@ -94,7 +94,7 @@ function showResourceOnUI() {
 
     let theSiteName = document.createElement("a");
     theSiteName.classList.add("website-name");
-    theSiteName.setAttribute("href", `${siteLink}`);
+    theSiteName.setAttribute("href", siteLink);
     theSiteName.setAttribute("target", "_blank");
     theSiteName.textContent = siteName;
 
