@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+:root {
+  --white: #ffffff;
+  --smokewhite: #f8f8f8;
+  --blue: #4c48f8;
+  --black: #23123d;
+  --border-color: #e3e3e3;
+
+  --greytext-color: #999999;
+
+  --border-radius-small: .4rem;
+  --border-radius-big: .6rem;
+}
+
+.first-section,
+.second-section {
+  background-color: var(--smokewhite);
+  width: 90%;
+  height: auto;
+  margin: 2rem auto;
+  padding: 1.4rem 2rem;
+  border-radius: var(--border-radius-small);
+}
+
+.welcome-createBtn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1.4rem;
+}
+
+.welcome-createBtn .top,
+.welcome-createBtn .bottom {
+  width: fit-content;
+  height: auto;
+}
+
+.welcome-createBtn .top h3 {
+  color: var(--black);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.welcome-createBtn .bottom button {
+  background-color: var(--blue);
+  color: var(--smokewhite);
+  padding: 1rem;
+  border-radius: var(--border-radius-small);
+  font-size: .9rem;
+  letter-spacing: .010rem;
+  cursor: pointer;
+}
+
+.welcome-createBtn .bottom button:hover,
+.third-section .modal-container .bottom .form-container button:hover {
+  background-color: #4643e3;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.resource-container {
+  width: 30%;
+  background-color: var(--white);
+  border-radius: var(--border-radius-big);
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+  flex-grow: 1;
+}
+
+.resource-container .website-nameBtn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resource-container .website-nameBtn a {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.resource-container .website-nameBtn i {
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.resource-container .website-nameBtn i:hover {
+  color: #ffb3b2;
+}
+
+.resource-container .description-container {
+  width: 100%;
+  height: auto;
+}
+
+.resource-container .description-container p {
+  color: var(--greytext-color);
+}
+
+.third-section {
+  background-color: #0000005f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-section .modal-container {
+  width: 40%;
+  background-color: var(--white);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+  border-radius: var(--border-radius-big);
+}
+
+.third-section .modal-container .top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: start;
+}
+
+.third-section .modal-container .top i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.third-section .modal-container .bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1.2rem;
+}
+
+.third-section .modal-container .bottom .heading,
+.third-section .modal-container .bottom .form-container {
+  width: 100%;
+  height: auto;
+}
+
+.third-section .modal-container .bottom .heading h4 {
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.third-section .modal-container .bottom .form-container form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.third-section .modal-container .bottom .form-container form .form-group {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.third-section .modal-container .bottom .form-container form .form-group label {
+  font-size: .85rem;
+  color: var(--black);
+}
+
+.third-section .modal-container .bottom .form-container form .form-group input,
+.third-section .modal-container .bottom .form-container form .form-group textarea {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  padding: .6rem;
+  border-radius: var(--border-radius-small);
+  resize: none;
+}
+
+.third-section .modal-container .bottom .form-container form .form-group input::placeholder,
+.third-section .modal-container .bottom .form-container form .form-group textarea::placeholder {
+  color: var(--greytext-color);
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+.third-section .modal-container .bottom .form-container form .form-group input:focus,
+.third-section .modal-container .bottom .form-container form .form-group textarea:focus {
+  border-color: #8886fac1;
+}
+
+.third-section .modal-container .bottom .form-container button {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: var(--border-radius-small);
+  background-color: var(--blue);
+  color: var(--smokewhite);
+  font-size: .9rem;
+  letter-spacing: .010rem;
+  cursor: pointer;
+}
+
+.third-section.hide {
+  display: none;
+}
